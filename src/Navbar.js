@@ -32,7 +32,6 @@ function NavBar() {
     <Router>
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <WelcomeModal />
-
         <Container>
           <Navbar.Brand href="#home">
             <img src={logo} alt="logo" />
@@ -78,7 +77,7 @@ function NavBar() {
               </div>
               <HashLink to="#connect">
                 <button className="vvd">
-                  <span>Let’s Connect</span>
+                  <span>Let’s Connectt</span>
                 </button>
               </HashLink>
             </span>
