@@ -31,7 +31,7 @@ function NavBar() {
   return (
     <Router>
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-        <WelcomeModal />
+        {/* <WelcomeModal /> */}
         <Container>
           <Navbar.Brand href="#home">
             <img src={logo} alt="logo" />

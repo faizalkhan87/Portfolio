@@ -3,7 +3,6 @@ import { ProgressBar } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import sound from "./assets/sounds/WelcomeAlert.mp3";
-import { useEffect } from "react";
 
 export const WelcomeModal = () => {
   const [show, setShow] = useState(true);
