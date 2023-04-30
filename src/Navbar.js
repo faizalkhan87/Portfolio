@@ -8,6 +8,7 @@ import navIcon2 from "./assets/images/nav-icon2.svg";
 import navIcon3 from "./assets/images/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+import { WelcomeModal } from "./WelcomeModal";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -30,6 +31,8 @@ function NavBar() {
   return (
     <Router>
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+        <WelcomeModal />
+
         <Container>
           <Navbar.Brand href="#home">
             <img src={logo} alt="logo" />

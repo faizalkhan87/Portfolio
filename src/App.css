@@ -159,7 +159,8 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .social-icon a:hover img {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%)
+    contrast(86%);
 }
 .navbar-text button {
   font-weight: 700;
@@ -325,6 +326,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.modalBody {
+  background-image: url("../src/assets/images/banner-bg.png");
 }
 
 /************ Footer Css ************/
