@@ -15,6 +15,7 @@ function NavBar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    console.log("kljjjjjjjjjjjjjjjjjjjjjjjjjjj");
     const onScroll = () => {
       if (window.scrollY > 50) {
         setScrolled(true);
