@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ProgressBar } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import sound from "./assets/sounds/WelcomeAlert.mp3";
+import { AudioFile } from "././context/sharedContext.js";
 
 export const WelcomeModal = () => {
   const [show, setShow] = useState(true);
+  const { audioFile } = useContext(AudioFile);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   const play = () => {
-    const audio = new Audio(sound);
-    audio.play();
+    audioFile.play();
   };
 
   return (

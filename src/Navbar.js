@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -6,13 +6,21 @@ import logo from "./assets/images/logo 1.svg";
 import navIcon1 from "./assets/images/nav-icon1.svg";
 import navIcon2 from "./assets/images/nav-icon2.svg";
 import navIcon3 from "./assets/images/nav-icon3.svg";
+import mute from "./assets/images/mute.svg";
+
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 import { WelcomeModal } from "./WelcomeModal";
+import { AudioFile } from "./context/sharedContext";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const { audioFile } = useContext(AudioFile);
+
+  const handleMusic = () => {
+    audioFile.pause()
+  }
 
   useEffect(() => {
     const onScroll = () => {
@@ -31,7 +39,7 @@ function NavBar() {
   return (
     <Router>
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-        {/* <WelcomeModal /> */}
+        <WelcomeModal />
         <Container>
           <Navbar.Brand href="#home">
             <img src={logo} alt="logo" />
@@ -68,18 +76,26 @@ function NavBar() {
                 <a href="https://www.linkedin.com/in/faizal-khan-bb2a971a7/">
                   <img src={navIcon1} alt="" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/faizal-khan-bb2a971a7/">
                   <img src={navIcon2} alt="" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/faizal-khan-bb2a971a7/">
                   <img src={navIcon3} alt="" />
+                </a>
+
+              </div>
+              <div className="social-icon" onClick={handleMusic}>
+                <a href="#" >
+                  <img src={mute} alt="" />
                 </a>
               </div>
               <HashLink to="#connect">
                 <button className="vvd">
-                  <span>Let’s Connectt</span>
+                  <span>Let’s Connect</span>
                 </button>
               </HashLink>
+
+
             </span>
           </Navbar.Collapse>
         </Container>
