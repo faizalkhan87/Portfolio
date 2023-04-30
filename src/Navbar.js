@@ -15,7 +15,6 @@ function NavBar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    console.log("kljjjjjjjjjjjjjjjjjjjjjjjjjjj");
     const onScroll = () => {
       if (window.scrollY > 50) {
         setScrolled(true);
@@ -32,7 +31,7 @@ function NavBar() {
   return (
     <Router>
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-        {/* <WelcomeModal /> */}
+        <WelcomeModal />
         <Container>
           <Navbar.Brand href="#home">
             <img src={logo} alt="logo" />
