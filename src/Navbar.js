@@ -7,6 +7,7 @@ import navIcon1 from "./assets/images/nav-icon1.svg";
 import navIcon2 from "./assets/images/nav-icon2.svg";
 import navIcon3 from "./assets/images/nav-icon3.svg";
 import mute from "./assets/images/mute.svg";
+import play from "./assets/images/play.png";
 
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -18,9 +19,12 @@ function NavBar() {
   const [scrolled, setScrolled] = useState(false);
   const { audioFile } = useContext(AudioFile);
 
-  const handleMusic = () => {
-    audioFile.pause()
-  }
+  const handleMusicStop = () => {
+    audioFile.pause();
+  };
+  const handleMusicPlay = () => {
+    audioFile.play();
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -39,7 +43,7 @@ function NavBar() {
   return (
     <Router>
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-        <WelcomeModal />
+        {/* <WelcomeModal /> */}
         <Container>
           <Navbar.Brand href="#home">
             <img src={logo} alt="logo" />
@@ -51,21 +55,29 @@ function NavBar() {
             <Nav className="me-auto">
               <Nav.Link
                 href="#home"
-                className={activeLink === "home" ? "active navbar-link" : "navbar-link"}
+                className={
+                  activeLink === "home" ? "active navbar-link" : "navbar-link"
+                }
                 onClick={() => setActiveLink("home")}
               >
                 Home
               </Nav.Link>
               <Nav.Link
                 href="#skills"
-                className={activeLink === "skills" ? "active navbar-link" : "navbar-link"}
+                className={
+                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
+                }
                 onClick={() => setActiveLink("skills")}
               >
                 Skills
               </Nav.Link>
               <Nav.Link
                 href="#projects"
-                className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
+                className={
+                  activeLink === "projects"
+                    ? "active navbar-link"
+                    : "navbar-link"
+                }
                 onClick={() => setActiveLink("projects")}
               >
                 Projects
@@ -82,11 +94,15 @@ function NavBar() {
                 <a href="https://www.linkedin.com/in/faizal-khan-bb2a971a7/">
                   <img src={navIcon3} alt="" />
                 </a>
-
               </div>
-              <div className="social-icon" onClick={handleMusic}>
-                <a href="#" >
+              <div className="social-icon" onClick={handleMusicStop}>
+                <a href="#">
                   <img src={mute} alt="" />
+                </a>
+              </div>
+              <div className="social-icon" onClick={handleMusicPlay}>
+                <a href="#">
+                  <img src={play} alt="" />
                 </a>
               </div>
               <HashLink to="#connect">
@@ -94,8 +110,6 @@ function NavBar() {
                   <span>Let’s Connect</span>
                 </button>
               </HashLink>
-
-
             </span>
           </Navbar.Collapse>
         </Container>
