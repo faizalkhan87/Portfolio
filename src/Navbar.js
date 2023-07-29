@@ -7,7 +7,7 @@ import navIcon1 from "./assets/images/nav-icon1.svg";
 import navIcon2 from "./assets/images/nav-icon4.svg";
 import navIcon3 from "./assets/images/nav-icon3.svg";
 import mute from "./assets/images/mute.svg";
-import play from "./assets/images/play.png";
+import play from "./assets/images/play-btn.svg";
 
 import { HashLink } from "react-router-hash-link";
 import { Link, Outlet, BrowserRouter as Router } from "react-router-dom";
