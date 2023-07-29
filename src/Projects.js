@@ -6,13 +6,7 @@ import Qar from "./assets/images/quantamarcdark.png";
 
 const Projects = () => {
   return (
-    <section
-      className="project"
-      id="projects"
-      style={{
-        padding: "10rem",
-      }}
-    >
+    <section className="project" id="projects">
       <Carousel fade data-bs-theme="dark">
         <Carousel.Item>
           <center>
