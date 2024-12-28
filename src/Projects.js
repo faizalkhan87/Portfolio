@@ -1,8 +1,8 @@
 import React from "react";
 import { Card, Carousel, Col, Image, Row } from "react-bootstrap";
-import QuantamArDark from "./assets/images/quantamarc.png";
-import Qarc from "./assets/images/qc.png";
-import Qar from "./assets/images/quantamarcdark.png";
+import QuantamArDark from "https://mir-s3-cdn-cf.behance.net/projects/404/9b9b13162243505.Y3JvcCw4MDgsNjMyLDAsMA.png";
+import Qarc from "https://mir-s3-cdn-cf.behance.net/projects/404/9b9b13162243505.Y3JvcCw4MDgsNjMyLDAsMA.png";
+import Qar from "https://mir-s3-cdn-cf.behance.net/projects/404/9b9b13162243505.Y3JvcCw4MDgsNjMyLDAsMA.png";
 
 const Projects = () => {
   return (
