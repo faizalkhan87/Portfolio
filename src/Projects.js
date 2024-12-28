@@ -1,8 +1,5 @@
 import React from "react";
 import { Card, Carousel, Col, Image, Row } from "react-bootstrap";
-// import QuantamArDark from "https://mir-s3-cdn-cf.behance.net/projects/404/9b9b13162243505.Y3JvcCw4MDgsNjMyLDAsMA.png";
-// import Qarc from "https://mir-s3-cdn-cf.behance.net/projects/404/9b9b13162243505.Y3JvcCw4MDgsNjMyLDAsMA.png";
-// import Qar from "https://mir-s3-cdn-cf.behance.net/projects/404/9b9b13162243505.Y3JvcCw4MDgsNjMyLDAsMA.png";
 
 const Projects = () => {
   return (
@@ -12,7 +9,7 @@ const Projects = () => {
           <center>
             <Row>
               <Col>
-                 {/* <Image src={Qarc} /> */}
+             
               </Col>
             </Row>
           </center>
@@ -25,7 +22,7 @@ const Projects = () => {
           <center>
             <Row>
               <Col>
-                 {/* <Image src={QuantamArDark} /> */}
+              
               </Col>
             </Row>
           </center>
@@ -38,7 +35,7 @@ const Projects = () => {
           <center>
             <Row>
               <Col>
-                 {/* <Image src={Qar} /> */}
+             
               </Col>
             </Row>
           </center>
