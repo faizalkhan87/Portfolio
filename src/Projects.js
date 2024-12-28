@@ -12,7 +12,7 @@ const Projects = () => {
           <center>
             <Row>
               <Col>
-                <Image src={Qar} />
+                // <Image src={Qar} />
               </Col>
             </Row>
           </center>
@@ -25,7 +25,7 @@ const Projects = () => {
           <center>
             <Row>
               <Col>
-                <Image src={QuantamArDark} />
+                // <Image src={QuantamArDark} />
               </Col>
             </Row>
           </center>
@@ -38,7 +38,7 @@ const Projects = () => {
           <center>
             <Row>
               <Col>
-                <Image src={Qar} />
+                // <Image src={Qar} />
               </Col>
             </Row>
           </center>
