@@ -10,6 +10,7 @@ export const Contact = () => {
     email: "",
     phone: "",
     message: "",
+
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
 
@@ -48,7 +49,7 @@ export const Contact = () => {
                         <input
                           type="text"
                           value={formDetails.firstName}
-                          placeholder="First Name"
+                          placeholder="First Name "
                           name="firstName"
                           onChange={(e) => onFormUpdate("firstName", e.target.value)}
                           required
